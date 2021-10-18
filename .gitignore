@@ -1,0 +1,9 @@
+planning-system-api/build/*
+planning-system-api/gradle/*
+planning-system-api/.gradle/*
+planning-system-api/.idea/*
+planning-system-api/src/main/resources/dev.planning.jks
+planning-system-api/src/main/resources/dev.application.properties
+
+planning-system/build/*
+planning-system/.idea/*

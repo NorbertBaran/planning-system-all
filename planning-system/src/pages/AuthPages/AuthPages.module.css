@@ -1,0 +1,50 @@
+.AuthPages{
+    width: 50vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    /*justify-content: center;
+    top: -10vh;*/
+    top: 25vh;
+    gap: 20px;
+}
+
+.NavLinks{
+    width: 500px;
+    margin-bottom: 60px;
+}
+
+.Link{
+    margin: 0 10px;
+    font-weight: bold;
+    color: var(--textColor);
+    cursor: pointer;
+    border: none;
+    text-decoration: none;
+}
+
+.ActiveLink{
+    font-size: var(--fontSizeHuge);
+    color: var(--primaryColorDark);
+}
+
+.SubmitCreate{
+    width: 500px;
+    display: flex;
+    justify-content: end;
+    gap: 15px;
+    margin-top: 60px;
+}
+
+.SubmitAdd{
+    display: flex;
+    gap: 8px;
+}
+
+.Inputs{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+}

@@ -1,0 +1,18 @@
+.Classic,
+.Special,
+.Bold{
+    font-size: var(--fontSizeHuge);
+    line-height: 60px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.Special{
+    font-weight: bold;
+    color: var(--primaryColorDark);
+}
+
+.Bold{
+    font-weight: bold;
+}

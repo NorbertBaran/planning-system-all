@@ -1,0 +1,43 @@
+.ButtonContainer{
+    display: inline-block;
+}
+
+.Button{
+    display: flex;
+    align-items: center;
+    border-radius: 5px;
+    color: var(--primaryColorBackground);
+    background-color: var(--primaryColorDark);
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    padding: 8px 10px;
+}
+
+.Button p{
+    margin: 0 5px;
+}
+
+.Text{
+    white-space: nowrap;
+}
+
+.Button:before{
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-55%, -50%) scale(1);
+    width: 100%;
+    background: var(--primaryColorBackground);
+    padding-top: 100%;
+    opacity: 0;
+    transition: all 0.4s ease;
+    border-radius: 50%;
+}
+
+.Button:active:before{
+    transition: 0s;
+    transform: translate(-50%, -50%) scale(0);
+    opacity: 0.8;
+}

@@ -1,0 +1,20 @@
+body{
+    background: var(--primaryColorBackgroundDark);
+    font-size: var(--fontSizeMedium);
+}
+
+.Right{
+    display: flex;
+    justify-content: end;
+}
+
+.Center{
+    display: flex;
+    justify-content: center;
+}
+
+.FixTop{
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}

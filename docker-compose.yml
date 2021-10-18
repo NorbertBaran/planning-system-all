@@ -1,0 +1,30 @@
+version: '3'
+services:
+  planning_system:
+    container_name: 'planning_system'
+    build: ./planning-system
+    ports:
+    - 80:80
+    depends_on:
+    - planning_system_api
+
+  planning_system_api:
+    container_name: 'planning_system_api'
+    build: ./planning-system-api/
+    ports:
+    - "8080:8080"
+    depends_on:
+    - planning_system_database
+
+  planning_system_database:
+    container_name: 'planning_system_database'
+    image: postgres
+    restart: always
+    environment:
+      POSTGRES_DB: planning_system
+      POSTGRES_USER: user
+      POSTGRES_PASSWORD: password
+    ports:
+    - "5432:5432"
+    volumes:
+      - ./db-data:/var/lib/postgresql/plannin_system_data

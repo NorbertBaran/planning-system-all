@@ -1,0 +1,83 @@
+input[type=date]:invalid{
+    color: transparent !important;
+}
+
+input[type=date]:focus{
+    color: black !important;
+}
+
+.InputGroup{
+    position: relative;
+    z-index: 3;
+    min-width: 300px;
+}
+
+.InputGroup .InputArea{
+    border: 1px solid var(--inputColor);
+    padding: 12px 12px;
+    padding-right: 42px;
+    border-radius: 5px;
+    box-shadow: none;
+    background: transparent;
+    color: var(--textColorDark);
+    opacity: 1;
+    width: 300px;
+}
+
+.InputGroup .InputArea:hover{
+    border: 1px solid var(--textColor);
+}
+
+.InputGroup .InputArea:hover + .Label{
+    color: var(--textColor);
+}
+
+.InputGroup .InputArea:focus{
+    border: 2px solid var(--primaryColorDark);
+    padding: 11px 11px;
+    padding-right: 41px;
+}
+
+.InputGroup .InputArea:valid + .Label{
+    top: -8px;
+    padding: 0 3px;
+    font-size: var(--fontSizeSmall);
+    color: var(--textColor);
+    z-index: 5;
+}
+
+.InputGroup .InputArea:focus + .Label{
+    top: -8px;
+    padding: 0 3px;
+    font-size: var(--fontSizeSmall);
+    color: var(--primaryColorDark);
+    z-index: 5;
+}
+
+.InputGroup .Label{
+    color: var(--inputColor);
+    position: absolute;
+    top: 14px;
+    left: 14px;
+    background: var(--primaryColorBackground);
+    transition: 0.1s;
+    z-index: -1;
+}
+
+.InputGroup .Icon{
+    display: inline-block;
+    position: relative;
+    top: 8px;
+    left: -35px;
+    color: var(--inputColor);
+    z-index: -1;
+    width: 0;
+}
+
+.InputGroup .InputArea:hover ~ .Icon{
+    color: var(--textColor);
+}
+
+.InputGroup .InputArea:focus ~ .Icon{
+    color: var(--primaryColorDark);
+}

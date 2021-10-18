@@ -1,0 +1,28 @@
+.Head{
+    background: var(--primaryColorDark);
+    color: var(--primaryColorBackground);
+    display: flex;
+    align-items: center;
+    padding: 5px 0;
+}
+
+.Head > img:first-of-type{
+    height: 30px;
+    margin: 0 10px;
+    margin-bottom: 5px;
+}
+
+.Head > p:first-of-type{
+}
+
+.Head > p:last-of-type{
+    margin-left: auto;
+}
+
+.Head > img:last-of-type{
+    margin: 0 10px;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+}

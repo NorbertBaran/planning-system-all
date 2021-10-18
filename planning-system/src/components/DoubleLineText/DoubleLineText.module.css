@@ -1,0 +1,11 @@
+.DoubleLineText{
+
+}
+
+.FirstLine{
+
+}
+
+.SecondLine{
+    color: var(--textColor);
+}

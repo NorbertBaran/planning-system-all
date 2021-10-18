@@ -1,0 +1,40 @@
+.Menu{
+    background: var(--primaryColor);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.Link{
+    outline: none;
+    border: none;
+    text-decoration: none;
+    color: var(--primaryColorDark);
+    margin: 0 5px;
+}
+
+.Link:hover{
+    background: var(--primaryColorMiddle);
+}
+
+.ActiveLink{
+    color: var(--primaryColorBackground);
+}
+
+.Option{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.Option > svg{
+    margin-top: 15px;
+    font-size: 40px;
+}
+
+.Option > p{
+    line-height: 1;
+    margin-top: 5px;
+    margin-bottom: 15px;
+}

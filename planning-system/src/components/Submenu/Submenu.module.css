@@ -1,0 +1,32 @@
+.Submenu{
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+}
+
+.Active,
+.Option{
+    text-decoration: none;
+    outline: none;
+    background: var(--primaryColorBackground);
+    color: var(--textColor);
+    padding: 10px;
+    min-width: 280px;
+    text-align: center;
+    border-radius: 20px;
+    border: 1px solid var(--dividerColor);
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+
+/*.Option:hover{
+    background: var(--primaryColorDark);
+    border: 1px solid var(--primaryColorDark);
+    color: var(--primaryColorBackground);
+}*/
+
+.Active{
+    background: var(--primaryColor);
+    border: 1px solid var(--primaryColor);
+    color: var(--primaryColorBackground);
+}
